@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ClientTest", "ClientTest\ClientTest.vcxproj", "{8621AF5C-780D-4989-97EB-5BF4A6DDAF84}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wdf", "wdf\wdf.vcxproj", "{8FB74A26-D930-46C3-ACA6-AA99A167E471}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8621AF5C-780D-4989-97EB-5BF4A6DDAF84}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8621AF5C-780D-4989-97EB-5BF4A6DDAF84}.Debug|Win32.Build.0 = Debug|Win32
+		{8621AF5C-780D-4989-97EB-5BF4A6DDAF84}.Release|Win32.ActiveCfg = Release|Win32
+		{8621AF5C-780D-4989-97EB-5BF4A6DDAF84}.Release|Win32.Build.0 = Release|Win32
+		{8FB74A26-D930-46C3-ACA6-AA99A167E471}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8FB74A26-D930-46C3-ACA6-AA99A167E471}.Debug|Win32.Build.0 = Debug|Win32
+		{8FB74A26-D930-46C3-ACA6-AA99A167E471}.Release|Win32.ActiveCfg = Release|Win32
+		{8FB74A26-D930-46C3-ACA6-AA99A167E471}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
