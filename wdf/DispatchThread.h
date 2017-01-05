@@ -61,16 +61,23 @@ private:
 template<class TYPE>
 BOOL CDispatchThread::PostThreadMassage(const TYPE& msg, UINT nMsgType, int nDstAddr)
 {
-	TYPE *pMsg = new TYPE(msg);
-	BOOL bRet = PostUtsMessage(nDstAddr, nMsgType, WPARAM(pMsg), m_nThreadType);
+	map<UINT, UINT>::iterator it = m_mapDTThread.find(nDstAddr);
+	m_lockRW.LeaveWriter();
 
-	if (!bRet)
+	if (it == m_mapDTThread.end())
+	{
+		return FALSE;
+	}
+
+	TYPE *pMsg = new TYPE(msg);
+	
+	if (!PostThreadMessage(it->second, nMsgType,  WPARAM(pMsg), m_nThreadType))
 	{
 		delete pMsg;
 		pMsg = NULL;
 	}
 
-	return bRet;
+	return TRUE;
 }
 
 
